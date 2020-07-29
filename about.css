@@ -28,6 +28,8 @@ ol, ul, li {
 
 /*End of Reset*/
 
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
 /*Begining of Header Styles*/
 
 
@@ -38,23 +40,24 @@ html{
 
 a{
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 
 header{
 	width: 100%;
 	height: 12vh;
-	background-color: transparent;
+    background-color: black;
 }
 
 .container{
 	max-width: 120rem;
 	width: 90%;
-	margin: 0 auto;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 nav{
-	padding-top: 5rem;
+	padding-top: 4rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -66,7 +69,8 @@ nav{
 	font-size: 3rem;
 	font-weight: 300;
 	transform: translateX(-100rem);
-	animation: slideIn .5s forwards;
+    animation: slideIn .5s forwards;
+    margin-left: 1rem;
 }
 
 .brand span{
@@ -107,7 +111,7 @@ nav ul li a{
 }
 
 nav ul li a:last-child{
-	margin-right: 0;
+	margin-right: 1rem;
 }
 
 nav ul li a::before,
@@ -150,130 +154,138 @@ nav ul li a:hover::after{
 .topSection {
 	height: 100vh;
 	width: 100%;
-	background-image: url("https://cdn.pixabay.com/photo/2020/07/14/07/51/drone-5403216_960_720.jpg");
+	background-image: url("https://static.robinpowered.com/blog/images/breakout-space-inspiration/motorola-chicago-led-wall-breakout.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: top;
+    background-position: center;
+    box-shadow: 45px;
 }
 
 .topSection h2 {
-	text-align: center;
-	font-size: 5rem;
-	padding-top: 10%;
-	/* text-decoration: underline; */
-	/* font-weight: 300; */
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 8rem;
+    color: rgb(235, 233, 233);
+    /* text-transform: uppercase; */
+    padding-top: 3%;
+    margin-left: 5%;
+    font-weight: 300;
+    /* text-decoration: underline; */
+}
+
+/*Middle section styling*/
+
+.meet {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://i2.wp.com/files.123freevectors.com/wp-content/original/179609-plain-white-texture-background.jpg");
+    background-attachment: fixed;
+}
+
+.meet h2 {
+    text-align: center;
+    font-size: 5rem;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    color: rgb(39, 39, 39);
     font-family: monospace;
-	text-transform: uppercase;
+    text-decoration: underline;
 }
 
-.form-box {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: rgba(0,0,0,0.5);
-	padding: 10px;
-	margin-top: 45vh;
+section .team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom:;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
 }
 
-.search-field {
+.teamPlayer {
+    align-items: center;
+    border: 1.5px solid #e6e6e6;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    width: 30%;
+    margin: 8px;
+    padding: 16px;
+    /* transition: all .3s ease; */
+    background-color: white;
+}
+
+.teamPlayer img {
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.teamPlayer img:hover {
+    opacity: 65%;
+}
+
+.teamPlayer div {
+    text-align: center;
+}
+
+.teamPlayer h3 {
+    font-size: 3rem;
+    padding-top: 10%;
+}
+
+.teamPlayer p {
+    font-size: 2rem;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+/*Bottom section styling*/
+
+.join {
+    display: flex;
+    height: 40vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80");
+    /* background-attachment: fixed; */
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+
+.join h2 {
+    font-size: 5.5rem;
+    color: white;
+    font-family: monospace;
+}
+
+.join p {
+    font-size: 1.6rem;
+    color: white;
+    font-family: monospace;
+}
+
+.join button {
 	height: 30px;
-	padding: 10px;
-	border: none;
-	border-radius: 25px;
-	outline: none;
-	margin: 0 5px;
-}
-
-.tech {
-	width: 40%;
-}
-
-.location {
-	width: 20%;
-}
-
-.search-btn {
-	height: 50px;
-	width: 150px;
+    width: 150px;
+    font-family: monospace;
 	background-color: #2A8437;
 	border: none;
 	border-radius: 25px;
 	text-align: center;
 	font-size: 1.3rem;
-	margin: 0 1%;
+    margin: 0 1%;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
-.search-btn:hover {
+.join button:hover {
 	background: yellowgreen;
 	cursor: pointer;
-}
-/*End of Header Styling*/
-
-/*Break section styling*/
-
-.breakSection {
-	height: 100%;
-	text-transform: uppercase;
-	font-size: 6rem;
-	text-align: center;
-	background-color: #63d471;
-	background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
-	color: white;
-	/* border-bottom: 3px solid black; */
-	/* border-top: 3px solid black; */
-}
-
-
-/*Begining of first section styling*/
-
-.midSection {
-	display: grid;
-	height: 100%;
-	grid-gap: .5rem;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	background-color: black;
-	border-bottom: 3px;
-	margin: 3%;
-}
-
-.midDiv {
-	display: grid;
-	place-items: center;
-	background: white;
-	color: black;
-	height: 40vh;
-}
-
-.midDiv h2 {
-	text-align: center;
-	margin: 10%;
-	font-size: 3rem;
-}
-
-.midDiv p {
-	font-size: 1.5rem;
-	margin: 5%;
-}
-
-/*Bottom Section Styling*/
-
-.botSection {
-	height: 30vh;
-	background-image: url("https://images.unsplash.com/photo-1511341248441-45dea6e9c9a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1595&q=80");
-	display: flex;
-	flex-direction: column;
-	color: white;
-	justify-content: center;
-	align-items: center;
-}
-
-.botSection h2 {
-	font-size: 5rem;
-}
-
-.botSection p {
-	font-size: 2rem;
-	margin: 2% 15%;
 }
 
 /*footer section styling*/
@@ -352,8 +364,7 @@ nav ul li a:hover::after{
 .footer .social_media{
    color: #adadad;
 }
-
-
+ 
 @media (max-width:500px) {
    .wrapper .navbar .logo{
 	 font-size: 20px;
@@ -388,36 +399,12 @@ nav ul li a:hover::after{
    nav {
 	   flex-direction: column;
    }
-   .topSection nav li {
-	   margin-top: 10%;
-	   margin-right: 18%;
+   .topSection h2 {
+       font-size: 5rem;
+       padding-top: 10%;
    }
-   .form-box {
-	   flex-direction: column;
-	   margin-top: 30vh;
-   }
-   .tech {
-	   width: 95%;
-	   margin-bottom: 10px;
-   }
-   .location {
-	width: 95%;
-	margin-bottom: 10px;
-   }
-   .search-btn {
-	   width: 95%;
-   }
-   header h2 {
-	   font-size: 2rem;
-   }
-   .breakSection h2 {
-	   font-size: 3rem;
-   }
-   .botSection h2 {
-	   font-size: 3rem;
-	   margin-top: 10px;
-   }
-   .botSection p {
-	   font-size: 1.6rem;
+   .topSection ul {
+       padding-top: 20px;
+       /* padding: 0 10%; */
    }
 }
