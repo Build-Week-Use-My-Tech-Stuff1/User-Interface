@@ -148,7 +148,7 @@ nav ul li a:hover::after{
 }
 
 .topSection {
-	height: 80vh;
+	height: 100vh;
 	width: 100%;
 	background-image: url("https://cdn.pixabay.com/photo/2020/07/14/07/51/drone-5403216_960_720.jpg");
 	background-size: cover;
@@ -158,11 +158,11 @@ nav ul li a:hover::after{
 
 .topSection h2 {
 	text-align: center;
-	font-size: 4.5rem;
+	font-size: 5rem;
 	padding-top: 10%;
 	/* text-decoration: underline; */
 	font-weight: 300;
-	font-family: "Roboto Cn", sans-serif;
+    font-family: monospace;
 	text-transform: uppercase;
 }
 
@@ -172,7 +172,7 @@ nav ul li a:hover::after{
 	align-items: center;
 	background: rgba(0,0,0,0.5);
 	padding: 10px;
-	margin-top: 35vh;
+	margin-top: 45vh;
 }
 
 .search-field {
