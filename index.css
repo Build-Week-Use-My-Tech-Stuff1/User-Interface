@@ -161,7 +161,7 @@ nav ul li a:hover::after{
 	font-size: 5rem;
 	padding-top: 10%;
 	/* text-decoration: underline; */
-	font-weight: 300;
+	/* font-weight: 300; */
     font-family: monospace;
 	text-transform: uppercase;
 }
@@ -387,5 +387,37 @@ nav ul li a:hover::after{
    }
    nav {
 	   flex-direction: column;
+   }
+   .topSection nav li {
+	   margin-top: 10%;
+	   margin-right: 18%;
+   }
+   .form-box {
+	   flex-direction: column;
+	   margin-top: 30vh;
+   }
+   .tech {
+	   width: 95%;
+	   margin-bottom: 10px;
+   }
+   .location {
+	width: 95%;
+	margin-bottom: 10px;
+   }
+   .search-btn {
+	   width: 95%;
+   }
+   header h2 {
+	   font-size: 2rem;
+   }
+   .breakSection h2 {
+	   font-size: 3rem;
+   }
+   .botSection h2 {
+	   font-size: 3rem;
+	   margin-top: 10px;
+   }
+   .botSection p {
+	   font-size: 1.6rem;
    }
 }
