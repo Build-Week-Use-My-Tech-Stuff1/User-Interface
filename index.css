@@ -414,10 +414,10 @@ nav ul li a:hover::after{
 	   font-size: 3rem;
    }
    .botSection h2 {
-	   font-size: 3rem;
+	   font-size: 2.3rem;
 	   margin-top: 10px;
    }
    .botSection p {
-	   font-size: 1.6rem;
+	   font-size: 1.3rem;
    }
 }

@@ -400,11 +400,18 @@ section .team {
 	   flex-direction: column;
    }
    .topSection h2 {
-       font-size: 5rem;
+       font-size: 4rem;
        padding-top: 10%;
    }
    .topSection ul {
        padding-top: 20px;
        /* padding: 0 10%; */
+   }
+   .teamPlayer {
+       width: 90%;
+   }
+   .botSection {
+       height: 25vh
+
    }
 }
