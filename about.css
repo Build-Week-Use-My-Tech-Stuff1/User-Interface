@@ -410,8 +410,5 @@ section .team {
    .teamPlayer {
        width: 90%;
    }
-   .botSection {
-       height: 25vh
 
-   }
 }
